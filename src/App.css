@@ -1,0 +1,19 @@
+.flex-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.navLinkWrapper{
+  width: 100%;
+  background-color: aquamarine;
+}
+.navIcons{
+  font-size: 25px;
+}
+.navIconWrapper{
+  width: 40%;
+}
+
+.carouselImages{
+  width: 50%;
+}

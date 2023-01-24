@@ -1,0 +1,196 @@
+
+html{
+    font-size: 1.5vw;
+} 
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: sans-serif;
+    line-height:1.6 ;
+    font-size: 20px;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1,h2{
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+h1{
+    font-size: 40px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+h3{
+    font-size: 25px;
+}
+
+p{
+    margin: 10px 0;
+}
+
+p,span{
+    font-size: 18px;
+}
+
+img{
+    width: 100%;
+}
+
+.navIcons{
+    font-size:25px;
+}
+
+
+.flexContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navIconWrappers{
+    width: 37%;
+}
+
+.navLinkWrapper{
+    width:80%;
+    margin-left: auto;
+}
+
+.navLinkWrapper a.active{
+    color:blueviolet;
+    padding-bottom:5px;
+    border-bottom:solid thick blueviolet
+}
+.navLinkWrapper a{
+    color: blueviolet;
+}
+
+.navLinkWrapper a:hover{
+    color: blueviolet;
+}
+
+
+.wrapper{
+    padding: 35px 8rem;
+}
+
+.sectionHeader{
+    letter-spacing: 0.2rem;
+    width: fit-content;
+    white-space: nowrap;
+}
+
+.sectionHeaderWrapper{
+    flex-direction: column;
+    align-items: center;
+    width:-content;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+.gridContainer{
+    display:grid;
+    grid-template-rows: repeat(2,fit-content);
+}
+
+.footer a{
+    color: white; 
+}
+
+.footerText{
+    margin-left: 1em;
+}
+
+.pages{
+    min-height: 100vh;
+}
+
+.cartToggle{
+    position:relative; 
+    width:fit-content;
+}
+
+@media only screen and (min-width:992px){
+    .logout{
+        background-color: black;
+        padding: 5px 0;
+        width: 100px;
+        color: white;
+        text-align: center;
+        border-radius: 5px;
+    }
+} 
+
+@media only screen and (max-width:768px) {
+
+   .footerWrapper{
+       flex-direction: column;
+   }
+   
+}
+
+@media only screen and (max-width:991px){
+
+    .navLink{
+        width: 100%;
+        display: block;
+    }
+    .navLinkWrapper{
+        width:100%;
+    }
+
+    .nav-item{
+        padding-left: 2rem;
+        margin-top: 10px;
+    }
+
+    /* .cartToggle{
+        width: 100%;
+    } */
+
+    .nav-item:hover{
+        background-color: cadetblue;
+    }
+
+    .navLinkWrapper a.active{
+        color:blueviolet;
+        padding-bottom:none;
+        border-bottom: none;
+    }
+
+    .nav-item:hover{
+        color: white;
+    }
+
+    .nav-item:hover a{
+        color: white;
+    }
+
+    .navLinkWrapper a{
+        color:black;
+    }
+
+    .cartToggle{
+        color: black;
+        padding-left: 2rem;
+        margin-top: 10px;
+    }
+
+}

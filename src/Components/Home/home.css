@@ -1,0 +1,56 @@
+
+.carouselTextWrapper{
+    align-items: center;
+    min-width: 50%;   
+}
+.carouselTextWrapper p{
+    font-size: 22px; 
+}
+
+.imageContainer{
+    background-color:rgba(239,239,239,255)
+}
+
+.prevCarouselControl{
+    padding-left: 1rem;
+    justify-content: flex-start;
+}
+
+.nextCarouselControl{
+    padding-right: 1rem;
+    justify-content: flex-end;
+}
+
+.productWrappers{
+    width: 230px;
+    height:230px;
+    border-radius: 125px;
+    overflow: hidden;
+}
+
+.topProductWrappers{
+    flex-direction: column;
+    align-items: center;
+}
+
+.productCategoryWrapper{
+    row-gap: 35px;
+}
+
+
+@media only screen and (max-width:991px) {
+    .productsWrapper{
+        flex-direction: column;
+    }
+
+    .carouselTextWrapper p{
+        font-size: 20px; 
+    }
+}
+
+@media only screen and (max-width:500px){
+
+    .carouselTextWrapper p{
+        font-size: 17px; 
+    }
+}
